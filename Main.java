@@ -119,10 +119,80 @@ class Main {
 
         // while文を用いて、numberが0より大きい場合に繰り返す、繰り返し処理
         while ( number > 0 ){
-          System.out.println(number);
+            System.out.println(number);
           number --;
         }
 
+        // for文(while文の簡略した書き方)
+        for ( int i = 1; i <= 10; i++) {
+            System.out.println(i + "回目のループです");
+        }
+
+
+
+        // break処理とcontinue処理
+        System.out.println("=== while文 ===");
+        int i = 1;
+        while (i < 10) {
+            // iが5の倍数のとき、繰り返し処理を終了させる
+            if ( i % 5 == 00 ){
+                break;
+            }
+
+        System.out.println(i);
+        i++;
+        }
+
+        System.out.println("=== for文 ===");
+        for (int j = 1; j < 10; j++) {
+            // jが3の倍数のとき、処理をスキップさせる
+            if ( j % 3 == 0 ){
+                continue;
+            }
+
+        System.out.println(j);
+        }
+
+
+
+        // 配列 変数namesに、配列を代入
+        String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ"};
+
+        // インデックス番号が0の要素を出力
+        System.out.println(names[0]);
+
+        // インデックス番号が2の要素を出力
+        System.out.println(names[2]);
+
+        // 配列の要素に新しい値を上書きする
+
+        // 変数languagesを定義し、配列を代入
+        String[] languages = {"Ruby", "PHP", "Python"};
+
+        // インデックス番号が「1」の要素を出力
+        System.out.println(languages[1]);
+
+        // インデックス番号が「1」の要素を「Java」で上書き
+        languages[1] = "Java";
+
+        // インデックス番号が「1」の要素を出力
+        System.out.println(languages[1]);
+
+
+
+        // for文を使っての配列の繰り返し
+        String[] names = {"にんじゃわんこ", "ひつじ仙人", "ベイビーわんこ"};
+
+        // for文を用いて、「私の名前は◯◯です」と出力
+        for ( int i = 0; i < names.length; i++){
+            System.out.println("私の名前は" + names[i] + "です");
+        }
+
+
+        // 拡張for文
+        for (String name:names){
+            System.out.println("私の名前は" + name +"です");
+        }
 
     }
 }
