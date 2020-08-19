@@ -49,6 +49,41 @@ public class Main {
 
 	    // 変数nameを出力
 	    System.out.println(name);
+
+	    // 変数の連結
+
+	    int number1 = 3;
+
+	    // int型の変数number2を定義し、7を代入
+	    int number2 = 7;
+
+	    // number1 * number2を出力
+	    System.out.println( number1 * number2 );
+
+	    // 変数textに「プログラミングを勉強しよう」を代入
+	    String text = "プログラミングを勉強しよう";
+
+	    // 「Progateで」と変数textを連結して出力
+	    System.out.println( "Progateで" + text );
+
+	    // 変数の更新
+	    int number = 11;
+	    String text = "Ruby";
+	    System.out.println(number);
+	    System.out.println(text);
+
+	    // 変数numberを9で上書き
+	    number = 9;
+
+	    // 変数numberを出力
+	    System.out.println(number);
+
+	    // 変数textを「Java」で上書き
+	    text = "Java";
+
+	    // 変数textを出力
+	    System.out.println(text);
+
 	}
 
 }
