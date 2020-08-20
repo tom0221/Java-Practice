@@ -21,6 +21,8 @@ class Main {
 	}
 
 
+
+	// 引数の基本
 	public static void main(String[] args) {
 	    // 引数に「Kate Jones」を渡す
 	    printData("Kate Jones");
@@ -36,6 +38,23 @@ class Main {
 		System.out.println("私の名前は" + name + "です");
 
 	}
+
+	// 複数の引数
+	public static void main(String[] args) {
+	    // それぞれ年齢に関する引数を追加してください
+	    printData("Kate Jones", 27);
+	    printData("John Christopher Smith", 65);
+	}
+
+  	// 年齢に関する引数を受け取れるようにする
+	public static void printData(String name, int age) {
+	    System.out.println("私の名前は" + name + "です");
+	    // 「年齢は◯◯歳です」と出力してください
+	    System.out.println("年齢は" + age + "歳です");
+	}
+
+
+
 
 
 
