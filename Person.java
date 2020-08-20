@@ -1,4 +1,4 @@
-// 外部ライブラリjava.lang.Mathを読み込む
+// 外部ライブラリを読み込む
 import java.lang.Math;
 
 class Person{
