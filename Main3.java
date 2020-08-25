@@ -53,9 +53,4 @@ class Main {
 	    System.out.println("年齢は" + age + "歳です");
 	}
 
-
-
-
-
-
 }
