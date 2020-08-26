@@ -1,3 +1,4 @@
+// Java学習コースⅢ使用
 // 外部ライブラリを読み込む
 import java.lang.Math;
 

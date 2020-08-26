@@ -1,5 +1,5 @@
+// Java学習コースⅠ
 public class Main {
-
 	public static void main(String[] args) {
 		// Hello Java文字列を出力
 		System.out.println("Hello Java!");
@@ -84,5 +84,4 @@ public class Main {
 	    System.out.println(text);
 
 	}
-
 }

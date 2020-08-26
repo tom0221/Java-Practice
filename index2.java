@@ -1,3 +1,4 @@
+// Java学習コースⅠ続き
 class Main {
 	public static void main(String[] args) {
 		int number = 3;
