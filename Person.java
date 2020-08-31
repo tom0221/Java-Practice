@@ -8,6 +8,6 @@ class Person {
 		System.out.println("こんにちは");
 		System.out.println("Java太郎です");
 		System.out.println("Javaの学習中です");
-		System.out.println("明日の天気は晴れです");
+		// System.out.println("明日の天気は晴れです");
 	}
 }
