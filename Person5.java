@@ -6,6 +6,7 @@ class Person {
 
 	// 以下にインスタンスフィールドを定義する
 	public String firstName;
+	public String middleName;
 	public String lastName;
 	public int age;
 	public double height;
@@ -16,13 +17,29 @@ class Person {
 
 		// 変数countに1を足す
 		Person.count ++;
-
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.age = age;
 		this.height = height;
 		this.weight = weight;
 	}
+
+	// middleNameを受け取るコンストラクタを定義する
+	Person(String firstName, String middleName, String lastName, ini age, double height, double weight){
+		// Person.count++;
+	    // this.firstName = firstName;
+	    // this.lastName = lastName;
+	    // this.age = age;
+	    // this.height = height;
+	    // this.weight = weight;
+
+	    // 上と重複する為、削除し、this()を用いて、コンストラクタを呼び出す(重複を避ける)
+	    this(firstName, lastName, age, height, weight);
+
+	    // 追加する項目のみ下に追加↓
+	    this.middleName = middleName;
+	}
+
 
 	// fullNameメソッドを定義
 	public String fullName(){
