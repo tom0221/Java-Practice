@@ -2,8 +2,8 @@
 class Main {
 	public static void main(String[] args) {
 		Person person1 = new Person();
-		// Personクラス1 helloメソッドを呼び出し。
-		person1.hello();
+		// Personクラス1 helloメソッドを呼び出し。newの引数に人名を渡す
+		person1.hello("Kate Jones");
 
 		// person1のインスタンスフィールドnameに名前を定義
 		person1.name = "Kate Jones";
@@ -12,8 +12,8 @@ class Main {
 
 
 
-		// 2番目のperson2のhelloメソッドを呼び出す。
-		Person person2 = new Person();
+		// 2番目のperson2のhelloメソッドを呼び出す。newの引数に人名を渡す
+		Person person2 = new Person("John Christopher Smith");
 		// Personクラス2 helloメソッドを呼び出し。
 		person2.hello();
 

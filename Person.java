@@ -1,7 +1,14 @@
 class Person {
+	public String name;
 
-	public void hello() {
-	// 文字列「こんにちは」と出力する
-		System.out.println("こんにちは");
+	// コンストラクタがString型の引数を受け取るようにする
+	Person(String name){
+		System.out.println("インスタンスが生成されました");
+		// インスタンスフィールドnameに値をセット
+		this.name = name;
+	}
+
+	public void hello(){
+		System.out.println("こんにちは、私は" + this.name + "です");
 	}
 }
