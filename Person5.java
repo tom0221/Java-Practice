@@ -5,7 +5,8 @@ class Person {
 
 
 	// 以下にインスタンスフィールドを定義する
-	public String firstName;
+	// カプセル化で、privateに変える
+	private String firstName;
 	public String middleName;
 	public String lastName;
 	public int age;
@@ -43,7 +44,12 @@ class Person {
 
 	// fullNameメソッドを定義
 	public String fullName(){
-		return this.firstName + " " + this.lastName;
+		// if文での条件分岐を使い、middleNameが存在するときは、middleNameも出力する。
+		if(this.middleName == null){
+			return this.firstName + " " + this.lastName;
+		}else{
+			return this.firstName + " " + this.middleName + " " + this.lastName;
+		}
 	}
 
 
