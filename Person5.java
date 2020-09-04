@@ -5,7 +5,7 @@ class Person {
 
 
 	// 以下にインスタンスフィールドを定義する
-	// カプセル化で、privateに変える
+	// カプセル化で、以下privateに変える
 	private String firstName;
 	public String middleName;
 	public String lastName;
@@ -39,6 +39,11 @@ class Person {
 
 	    // 追加する項目のみ下に追加↓
 	    this.middleName = middleName;
+	}
+
+	// middleNameフィールドのゲッターを定義(外部から安全にアクセスする)
+	public String getMiddleName(){
+		return this.middleName;
 	}
 
 
