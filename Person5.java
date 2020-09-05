@@ -37,13 +37,18 @@ class Person {
 	    // 上と重複する為、削除し、this()を用いて、コンストラクタを呼び出す(重複を避ける)
 	    this(firstName, lastName, age, height, weight);
 
-	    // 追加する項目のみ下に追加↓
+	    // 後から、追加する項目のみ下に追加↓
 	    this.middleName = middleName;
 	}
 
 	// middleNameフィールドのゲッターを定義(外部から安全にアクセスする)
 	public String getMiddleName(){
 		return this.middleName;
+	}
+
+	// middleNameフィールドのセッターを定義(戻り値なしの為voidつける + 仮引数はString型middleName指定)
+	public void setMiddleName(String middleName){
+		this.middleName = middleName;
 	}
 
 

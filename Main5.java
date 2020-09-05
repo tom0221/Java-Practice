@@ -13,6 +13,10 @@ class Main {
     	// printCountメソッドの呼び出し
     	Person.printCount();
 
+    	System.out.println("-----------------")
+    	// person1のmiddleフィールドの値をClaireに変更する
+    	person1.setMiddleName;
+
     	// person2に対して、getMiddleNameメソッドを呼び出し、person2のミドルネームを出力する
     	System.out.println("person2のミドルネームは" + person2.getMiddleName() + "です");
 
