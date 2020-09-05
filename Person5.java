@@ -12,9 +12,11 @@ class Person {
 	public int age;
 	public double height;
 	public double weight;
+	// クラス外から直接アクセスできないインスタンス作成
+	private String job;
 
 	// 以下にコンストラクタを定義し、インスタンスフィールドに値をセットしてください
-	Person(String firstName, String lastName, int age, double height, double weight){
+	Person(String firstName, String lastName, int age, double height, double weight, String job){
 
 		// 変数countに1を足す
 		Person.count ++;
@@ -23,10 +25,11 @@ class Person {
 		this.age = age;
 		this.height = height;
 		this.weight = weight;
+		this.job = job;
 	}
 
 	// middleNameを受け取るコンストラクタを定義する
-	Person(String firstName, String middleName, String lastName, ini age, double height, double weight){
+	Person(String firstName, String middleName, String lastName, ini age, double height, double weight, String job){
 		// Person.count++;
 	    // this.firstName = firstName;
 	    // this.lastName = lastName;
@@ -46,9 +49,19 @@ class Person {
 		return this.middleName;
 	}
 
+	// jobのゲッター定義
+	public String getMiddleName(){
+		return this.job;
+	}
+
 	// middleNameフィールドのセッターを定義(戻り値なしの為voidつける + 仮引数はString型middleName指定)
 	public void setMiddleName(String middleName){
 		this.middleName = middleName;
+	}
+
+	// jobのセッター定義
+	public void setJob(Strign job){
+		this.job = job;
 	}
 
 
