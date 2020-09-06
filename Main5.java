@@ -39,3 +39,5 @@ class Main {
 
 	}
 }
+
+// 〜Java学習コースⅣ (person5.java)

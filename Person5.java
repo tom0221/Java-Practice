@@ -94,3 +94,4 @@ class Person {
 	}
 
 }
+// 〜Java学習コースⅣ (Main5.java)
